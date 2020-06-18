@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "535360708696",
+    "firebase_url": "https://wisata-sumbar-e935a.firebaseio.com",
+    "project_id": "wisata-sumbar-e935a",
+    "storage_bucket": "wisata-sumbar-e935a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535360708696:android:0b60fc137c1aaac3742a2d",
+        "android_client_info": {
+          "package_name": "wisata.travel.sumbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535360708696-uiee186i5qdutk26t3bfcgi0lqa0lbv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wisata.travel.sumbar",
+            "certificate_hash": "e2c9ca6c39d9dcf7395470cad59b9e59b457665e"
+          }
+        },
+        {
+          "client_id": "535360708696-ns6e50j1g6hfnl5g7b59k37hognd9544.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmNNlvxxFjvGboan7NQnoUH_NbdPfPp-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535360708696-ns6e50j1g6hfnl5g7b59k37hognd9544.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

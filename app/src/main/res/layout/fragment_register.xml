@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="wisata.travel.sumbar.ui.register.RegisterViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/create_account"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextFloatsRegister"
+                app:hintTextAppearance="@style/TextFloatsRegister">
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:lineSpacingExtra="7sp"
+                    android:fontFamily="sans-serif"
+                    android:maxLength="50"
+                    app:backgroundTint="#b6c1cf"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="@string/username"
+                    android:text="@={viewModel.username}"
+                    android:drawablePadding="10dp"
+                    android:inputType="text"
+                    android:autofillHints="@string/username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextFloatsRegister"
+                app:hintTextAppearance="@style/TextFloatsRegister">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:lineSpacingExtra="7sp"
+                    android:fontFamily="sans-serif"
+                    android:maxLength="50"
+                    app:backgroundTint="#b6c1cf"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="@string/email"
+                    android:text="@={viewModel.email}"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:autofillHints="@string/email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextFloatsRegister"
+                app:hintTextAppearance="@style/TextFloatsRegister">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:lineSpacingExtra="7sp"
+                    android:fontFamily="sans-serif"
+                    android:maxLength="50"
+                    app:backgroundTint="#b6c1cf"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="@string/password"
+                    android:text="@={viewModel.password}"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:autofillHints="@string/password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextFloatsRegister"
+                app:hintTextAppearance="@style/TextFloatsRegister">
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    android:lineSpacingExtra="7sp"
+                    android:fontFamily="sans-serif"
+                    android:maxLength="50"
+                    app:backgroundTint="#b6c1cf"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="@string/confirm_password"
+                    android:text="@={viewModel.confirmPassword}"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:autofillHints="@string/password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:enabled="@{viewModel.signUpButtonEnabled}"
+                android:textColor="@android:color/white"
+                android:text="@string/create_account" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
